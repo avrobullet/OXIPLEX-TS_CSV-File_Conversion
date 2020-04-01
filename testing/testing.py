@@ -144,7 +144,7 @@ def createCSV():
     global data
     global next_line
     global file
-    file_destination = '/Users/alexanderdouglas/PycharmProjects/test_bed/testing/00_demo_06-03-20_demo_graphdef.csv'
+    file_destination = r'C:\Users\Alex\PycharmProjects\OXIPLEX-TS_CSV-File_Conversion\testing\00_demo_06-03-20_demo_graphdef.csv'
     #Add titles
     #titleAdd()
 
@@ -160,7 +160,9 @@ def createCSV():
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# # Set appropriate titles # # # # # # # # # # # # # #
+# # Test calling modulues, classes, and functions from other subdirectories # # # # # # # # # # # # # #
+def subdirCalls():
+    tp.initiateTimePoints()
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -168,7 +170,7 @@ def createCSV():
 # Variables and modules
 import linecache as f_line
 import csv
-import pandas as pd
+from DataValidation import Time_Points as tp
 
 next_line = True
 num_counter = 0
@@ -178,7 +180,7 @@ title_line = 0
 columns = 0
 titles = ["Raw Time","Time","Ox% A","[THC] A","[HBO] A", "[Hb] A","Ox% B","[THC] B","[HBO] B", "[Hb] B","Marker"]
 data = []
-filename = '/Users/alexanderdouglas/Desktop/Relaxation_Test_V1/01_relaxation_14-01-20_graphdef.txt'
+filename = r'C:\Users\Alex\PycharmProjects\OXIPLEX-TS_CSV-File_Conversion\testing\00_demo_06-03-20_demo.txt'
 file = open(filename)
 
 # Function calling
@@ -187,6 +189,7 @@ checkLine()
 #titleAdd()
 #dataAdd()
 createCSV()
+subdirCalls()
 
 #Clean up
 f_line.clearcache()

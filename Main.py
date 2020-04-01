@@ -1,6 +1,5 @@
-from pip._vendor.pep517.compat import FileNotFoundError
-import CSV_Conversion as csv_conversion
-import File_Location as file_location
+from FileConversion import File_Location as file_location
+from FileConversion import CSV_Conversion as csv_conversion
 import re
 import os
 
@@ -13,20 +12,22 @@ def fileOptions():
     print("\nWhat would you like to do?")
     print("1. Convert a single graphdef.txt to .csv")
     print("2. Convert all graphdef.txt files to respective .csv files")
-    print("3. Run demo")
+    print("3. Set time points for when experiment was run (once .csv file is created)")
+    print("4. Run demo")
 
     # Identify options input by user is a numerical option
     file_option = input("\nEnter option: ")
-    regex = re.findall("[1-3]", file_option)
+    regex = re.findall("[1-4]", file_option)
 
     if regex:
         # Determine if the file and file path exists
         fileSelectPath(file_option)
+        # Clear screen
+        os.system('cls')
         fileCSVConversion()
     else:
         #Return to file options again to prompt user to select
         print("\nNo such option detected...")
-        fileOptions()
 
 # Create csv file based on user's selected location
 def fileCSVConversion():
@@ -38,13 +39,16 @@ def fileCSVConversion():
         for filename in os.listdir(txt_file_path):
             if re.search("graphdef.txt$", filename):
                 csv_file = re.sub("txt", "csv", filename)
-                csv_conversion.csvConversion(txt_file_path+filename, csv_file_path+csv_file)
+                csv_conversion.csvConversion(txt_file_path + filename, csv_file_path + csv_file)
 
     # Convert specific .txt file to csv
     else:
         # Convert txt_file nomenclenture into csv_file
         csv_file = re.sub("txt", "csv", txt_file)
-        csv_conversion.csvConversion(txt_file_path+txt_file, csv_file_path+csv_file)
+        csv_conversion.csvConversion(txt_file_path + txt_file, csv_file_path + csv_file)
+
+    # Get back to user options
+    fileOptions()
 
 # Check file path
 def fileSelectPath(file_option):
@@ -64,12 +68,20 @@ def fileSelectPath(file_option):
         #txt_file_path = input("\nEntre location of the graphdef.txt files: ")
         #csv_file_path = input("Entre location for all the newly made .csv files: ")
 
-    #Use default variables to test program capabilities
+    # Prompt user to set the time points for which the data is part of the experiment
     elif file_option == "3":
+        time_1 = input("First time point :")
+        time_2 = input("Second time point :")
+
+    #Use default variables to test program capabilities
+    elif file_option == "4":
         print("\nrunning demo...")
 
     # Check that .txt file location is valid
     file_location.fileCheck(txt_file, txt_file_path)
+
+    # Return to user options
+    fileOptions()
 
 #Default Variables
 txt_file = "00_demo_06-03-20_demo.txt"
