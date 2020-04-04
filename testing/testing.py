@@ -170,7 +170,7 @@ def subdirCalls():
 # Variables and modules
 import linecache as f_line
 import csv
-from DataValidation import Time_Points as tp
+from DataUsage import Time_Points as tp
 
 next_line = True
 num_counter = 0
