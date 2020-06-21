@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5d3ef104-409c-4458-9fca-3b2a9816812e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DataUsage/Data_Storage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataUsage/Data_Transformation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataUsage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataUsage/Raw_Time_Conversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test_bed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test_bed.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataValidation/Time_Points.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataValidation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tasks" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataUsage/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataUsage/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileConversion/File_Location.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileConversion/File_Location.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,17 +45,20 @@
   <component name="ProjectId" id="1XjksXxcur36XbWLskeKX1IeKao" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/DataUsage" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alexa\PycharmProjects\OXIPLEX-TS_CSV-File_Conversion\DataUsage" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Alex\PycharmProjects\OXIPLEX-TS_CSV-File_Conversion\FileConversion" />
       <recent name="$PROJECT_DIR$/testing" />
@@ -120,18 +139,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,6 +170,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="679" y="214" key="#Main" timestamp="1585714185368">

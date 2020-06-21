@@ -1,5 +1,6 @@
 # A dictionary-of-lists database that holds data unique to raw time points
 class DataStorage():
+    #Initial variables
     rawtime     = 0
     time        = 0
     oxy_a_perc  = 0
